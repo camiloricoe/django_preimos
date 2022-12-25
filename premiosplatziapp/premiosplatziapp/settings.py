@@ -39,6 +39,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+THIRD_APPS = [
+    #'jazzmin',
+]
+
+LOCAL_APPS = [
+    'polls.apps.PollsConfig',
+]
+
+
+INSTALLED_APPS = THIRD_APPS + INSTALLED_APPS + LOCAL_APPS
+
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
